@@ -1,10 +1,15 @@
 /* Clase Calculadora que implementa a la interface iCalculadora realizando todos los calculos necesarios */
 public class Calculadora{
 
-  private Pila <Double> operacion = new Pila<Double>();
+  private PilaFactory  fabrica = new PilaFactory();
+  private AbstractPila operacion;
 
   /* Constructor de la clase*/
   public Calculadora(){
+  }
+
+  public void Seleccion(){
+    operacion = fabrica.fabPila();
   }
 
 /* Interpreta la expresion del texto del documento y realiza las operaciones */
