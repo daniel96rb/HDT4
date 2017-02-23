@@ -10,4 +10,5 @@ public interface iPila<E>{
 	/* Realiza el pop del resultado */
 	public E pop();
 
+	public int size();
 }
